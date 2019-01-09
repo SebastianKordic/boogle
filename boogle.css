@@ -56,7 +56,7 @@ input[type=text] {
 }
 
 input[type=submit] {
-    width: 25%;
+    width: 100%;
     height: 36px;
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
@@ -83,4 +83,17 @@ input[type=submit]:focus {
     top: 53px;
     height: 58px;
     text-align: center;
+    position: relative;
+}
+
+.form1 {
+    position: absolute;
+    right: 262px;
+    top: -30px;
+}
+
+.form2 {
+    position: absolute;
+    left: 262px;
+    top: -30px;
 }

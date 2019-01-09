@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feeling lucky?</title>
+        <style>
+            body{
+                background-image: url("img/clover.jpg");
+                background-size: cover;
+            }
+            .box {
+                width: 680px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                
+            }
+            .luck {
+                margin-top: 250px;
+                font: 26px papyrus;
+                text-shadow: 3px 3px black;
+                background-color: rgba(12, 105, 12, 0.3);
+                border-radius: 36px;
+                animation-name: lucky;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+            }
+            .buttons {
+                position: relative;
+                top: 46px;
+
+            }
+            .good {
+                position: absolute;
+                right: 450px;
+            }
+            .bad {
+                position: absolute;
+                left: 450px;
+            }
+            input {
+                border: solid 1px rgba(0, 0, 0, 0.89);
+                border-radius: 2px;
+                font: 20px Papyrus;
+                font-weight: bold;
+                color: wheat;
+                background-color: darkslategrey;
+                height: 68px;
+                width: 148px;
+            }
+            input:hover {
+                background-color: rgba(191, 238, 160, 0.856);
+                color: rgba(0, 0, 0, 0.911);
+            }
+            input:active {
+                border: solid 2px rgba(255, 0, 0, 0.397);
+            }
+            @keyframes lucky {
+                0% {color:blue;}
+                25% {color:red;}
+                50% {color:yellow;}
+                75% {color:blue;}
+                100% {color:green;}
+            }
+        </style>
+    </head>
+    <body>
+      <div class="box">
+            <div class="luck">
+                    <h1>What kind of luck do you feel?</h1>
+            </div>
+
+            <div class="buttons">
+                <form class="good" action="https://www.google.com/">
+                    <input type="submit" value="Good luck">
+                </form>
+                <form class="bad" action="boogle.html">
+                    <input type="submit" value="Bad luck">
+                </form>
+            </div>
+      </div>
+    </body>
+</html>

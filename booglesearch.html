@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boogle search</title>
+        <style>
+            .searchblock {
+                margin: 15px 10px;
+                display: flex;
+                flex-direction: row;
+            }
+            .search {
+                padding: 2px 6px;
+                height: 34px;
+                border: none;
+            }
+            .searchspace {
+                position: relative;
+                width: 630px;
+                margin-top: 10px;
+                height: 44px;
+                border-radius: 24px;
+                box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 0 0 1px rgba(0,0,0,0.08);
+            }
+            img{
+                width: 110px;
+                height: 45px;
+                margin-right: 10px;
+                margin-top: 5px;
+            }
+            input[type=text] {
+                margin: 2px 16px;
+                height: 34px;
+                border: none;
+                width: 96%;
+                outline: none;
+                font: 16px Arial, sans-serif;
+                color: rgba(0,0,0,0.87);
+            }
+            .resultsblock {
+                border-top: solid 1px rgba(0,0,0,0.14);
+                padding-left: 150px;
+            }
+            .results1 {
+                font: 12px Arial, sans-serif;
+                color: rgba(0,0,0,0.47);
+                margin-bottom: 34px;
+            }
+            .results2 {
+                font: 14px Arial, sans-serif;
+                color: rgba(0,0,0,0.87);
+            }
+            a {
+                font: 22px Arial, sans-serif;
+                text-decoration: none;
+            }
+            .p {
+                line-height: 0.4;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="searchblock">
+            <a href="boogle.html"><img src="img/boogle.png"></a>
+              <div class="searchspace">
+                    <form class="search">
+                            <input type="text" placeholder="Sorry...">
+                    </form>
+              </div>
+        </div>
+
+        <div class="resultsblock">
+            <div class="results1">
+                <p>About 0 results because I'm bad at this</p>
+            </div>
+            <div>
+                 <a href="https://www.google.com/">This link...</a>
+                 <p class="p" style="font: 14px; color: green;">https://www.google.com/</p>
+                <div class="results2">
+                    <p clas="p">...will take you to the one that will help you.</p>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
